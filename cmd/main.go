@@ -16,8 +16,8 @@ import (
 
 func main() {
 	var envString []string
-	k8sContext := flag.String("context", "", "Name of the Azure Container Registry")
-	deploymentName := flag.String("deployment", "", "Name of the repository in your registry")
+	k8sContext := flag.String("context", "", "")
+	deploymentName := flag.String("deployment", "", "")
 
 	home := homedir.HomeDir()
 	config, err := clientcmd.NewNonInteractiveDeferredLoadingClientConfig(
