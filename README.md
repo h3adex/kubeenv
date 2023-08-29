@@ -6,6 +6,8 @@ then save them to a .env file.
 
 How to run this:
 ```shell
+# Install dependencies 
+# go mod download
 go run cmd/main.go --context my-kubernetes-cluster-01 --deployment web-app-01
 # Environment variables written to .env
 ```
